@@ -1,16 +1,17 @@
 <template>
-  <router-view />
+  <div class="nav-bar">
+    <a href="/#/VehiculoGuardarPage">Guardar Vehiculo</a>
+    <a href="/#/VehiculoConsultarPage">Consultar Vehiculos</a>
+  </div>
 </template>
 
 <script>
-import VehiculoGuardarPage from "./pages/VehiculoGuardarPage.vue";
-import VehiculoConsultar from "./pages/VehiculoConsultarPage.vue";
+import router from "@/router/router";
+import { routerKey } from "vue-router";
 
 export default {
-  name: "App",
-  components: {
-    VehiculoGuardarPage,
-    VehiculoConsultar,
+  methods: {
+    hre() {},
   },
 };
 </script>
@@ -23,5 +24,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+a {
+  margin-left: 15px;
 }
 </style>
